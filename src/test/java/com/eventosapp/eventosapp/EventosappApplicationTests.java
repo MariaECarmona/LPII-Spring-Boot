@@ -1,10 +1,10 @@
-package com.eventoapp.eventoapp;
+package com.eventosapp.eventosapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EventoappApplicationTests {
+class EventosappApplicationTests {
 
 	@Test
 	void contextLoads() {

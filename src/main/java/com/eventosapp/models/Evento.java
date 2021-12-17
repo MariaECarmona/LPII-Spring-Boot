@@ -1,4 +1,4 @@
-package com.eventoapp.models;
+package com.eventosapp.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
