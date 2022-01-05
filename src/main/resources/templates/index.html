@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="css/basic.css" type="text/css" rel="stylesheet">
+    <link href="css/listaEventos.css" type="text/css" rel="stylesheet">
+    <title>EventosApp</title>
 </head>
 <body>
-  <h1>Teste</h1>
+    <header>
+        <h1>EventosApp</h1>
+        <p><a href="/eventos">Ver Eventos</a> <a href="/cadastrarEvento"><span id="cadastrarBtn">Cadastrar Evento</span></a></p>
+    </header>
+    <main>
+        <h2>Lista de Eventos</h2>
+
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Local</th>
+                <th>Data</th>
+                <th>Horário</th>
+            </thead>
+            <tbody>
+                <tr th:each="evento : ${eventos}">
+                    <td th:text="${evento.nome}"></td>
+                    <td th:text="${evento.local}"></td>
+                    <td th:text="${evento.data}"></td>
+                    <td th:text="${evento.horario}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
