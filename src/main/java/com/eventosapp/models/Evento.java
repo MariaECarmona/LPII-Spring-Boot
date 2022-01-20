@@ -1,6 +1,7 @@
 package com.eventosapp.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import java.util.List;
 
@@ -18,9 +19,13 @@ public class Evento implements Serializable {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long codigo;
     private static  final long serialVersion  = 1L;
+    @NotEmpty
     private String nome;
+    @NotEmpty
     private String local;
+    @NotEmpty
     private String data;
+    @NotEmpty
     private String horario;
     @OneToMany
     private List<Convidado> convidado;

@@ -6,6 +6,7 @@
     <link href="css/basic.css" type="text/css" rel="stylesheet">
     <link href="css/forms.css" type="text/css" rel="stylesheet">
     <link href="css/detalhesEvento.css" type="text/css" rel="stylesheet">
+    <link href="css/tables.css" type="text/css" rel="stylesheet">
     <title>EventosApp</title>
 </head>
 <body>
@@ -28,9 +29,24 @@
         <form method="post">
             <p><input type="text" value="" name="nomeConvidado" placeholder="Nome do Convidado"></p>
             <p><input type="text" value="" name="rg" placeholder="RG"></p>
+            <p id="pMensagem"><th:block th:include="mensagemValidacao"></idth:block></p>
             <button type="submit">Adicionar</button>
         </form>
     </div>
+
+    <h3 id="hConvidados">Lista de Convidados:</h3>
+    <table>
+        <thead>
+        <th>Nome</th>
+        <th>RG</th>
+        </thead>
+        <tbody>
+            <tr th:each="convidado : ${convidados}">
+                <td><span th:text="${convidado.nomeConvidado}"></span></a></td>
+                <td><span th:text="${convidado.rg}"></span></td>
+            </tr>
+        </tbody>
+    </table>
 </main>
 </body>
 </html>
