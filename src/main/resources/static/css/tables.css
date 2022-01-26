@@ -1,6 +1,6 @@
 table{
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 th, td{
@@ -17,4 +17,9 @@ td{
 
 tr:nth-child(even) td{
     background-color: #ced4da;
+}
+
+a.icone-lixeira{
+    text-align: center;
+    color: #1f363d;
 }

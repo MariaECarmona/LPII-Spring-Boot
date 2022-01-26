@@ -65,8 +65,13 @@ header p a{
 
 header p span#cadastrarBtn{
     background-color:  #40798c;
-    border 1px solid #40798c;
+    border: 1px solid #40798c;
     border-radius: 5rem;
     padding: 0.5rem;
     font-size: 1.2rem;
+}
+
+a#icone-lixeira{
+    text-align: center;
+    color: #1f363d;
 }
