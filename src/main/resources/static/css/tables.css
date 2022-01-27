@@ -5,10 +5,13 @@ table{
 
 th, td{
     width: 15rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
 }
 
 th{
-    background-color: #40798c;
+    background-color: var(--roxo);
+    color: var(--branco);
 }
 
 td{
@@ -16,10 +19,18 @@ td{
 }
 
 tr:nth-child(even) td{
-    background-color: #ced4da;
+    background-color: var(--cinza1);
+}
+
+tr:nth-child(odd) td{
+    background-color: var(--cinza2);
+}
+
+a{
+    color: var(--preto);
 }
 
 a.icone-lixeira{
-    text-align: center;
-    color: #1f363d;
+    color: var(--rosa);
+    margin-left: 7rem;
 }

@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Oi&family=Shippori+Antique&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Oi&family=Shippori+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Staatliches&display=swap');
+
+:root {
+    --cinza1: #c5c5c7;
+    --cinza2: #DDDBE6;
+    --branco: #FFFFFF;
+    --roxo-escuro: #3D2645;
+    --preto: #000;
+    --roxo: #832161;
+    --rosa: #DA4167;
+}
+
 *{
     font-size: 16px;
 }
 
 body{
     margin: 0px;
+    background: var(--branco);
+    padding-bottom: 1rem;
 }
 
 header{
-    background-color: #1f363d;
+    background-color: var(--roxo-escuro);
     color: white;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -22,9 +34,9 @@ main{
 }
 
 button{
-    background-color: #40798c;
+    background-color: var(--roxo);
     padding: 0.5rem;
-    border: 0px solid #40798c;
+    border: 0px solid var(--roxo);
     border-radius: 5rem;
     color: white;
     font-size: 1.2rem;
@@ -32,8 +44,8 @@ button{
 }
 
 h1{
-    font-size: 4rem;
-    font-family: 'Oi', cursive;
+    font-size: 4.5rem;
+    font-family: 'Staatliches', cursive;
     font-weight: normal;
 }
 
@@ -41,6 +53,11 @@ h2{
     margin-top: 0px;
     font-size: 1.5rem;
     text-align: center;
+    color: var(--roxo-escuro);
+}
+
+h3{
+    color: var(--roxo-escuro);
 }
 
 button a{
@@ -64,14 +81,9 @@ header p a{
 }
 
 header p span#cadastrarBtn{
-    background-color:  #40798c;
-    border: 1px solid #40798c;
+    background-color:  var(--roxo);
+    border: 1px solid var(--roxo);
     border-radius: 5rem;
     padding: 0.5rem;
     font-size: 1.2rem;
-}
-
-a#icone-lixeira{
-    text-align: center;
-    color: #1f363d;
 }
